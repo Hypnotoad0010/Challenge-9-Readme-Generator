@@ -64,30 +64,26 @@ const questions = [
 // TODO: Create a function to write README file
 //Function to write readme
 function writeToFile(fileName, data) {
-    if (!fs.existsSync('output')) {
-      fs.mkdirSync('output');
-    }
-    fs.writeFileSync(`./output/${fileName}`, data, (err) =>
-      err ? console.error(err) : console.log("Readme Created")
-    )
+  if (!fs.existsSync('output')) {
+    fs.mkdirSync('output');
   }
+  fs.writeFileSync(`./output/${fileName}`, data, (err) =>
+    err ? console.error(err) : console.log("Commit logged!")
+  )
+}
 
 // TODO: Create a function to initialize app
 //async function added 
 async function init() {
-    return inquirer
-    // Ask user questions
-      .prompt(questions)
-      //Generates responses
-      .then((answers) => {
-        const results = generateMarkdown(answers)
-        writeToFile("README.md", results)
-      })
-      .catch((err) => {
-        console.log(err)
+  return inquirer
+    .prompt(questions)
+    .then((answers) => {
+      const results = generateMarkdown(answers)
+      writeToFile("README.md", results)
     })
-
-  }
-
+    .catch((error) => {
+      console.log(error)
+    })
+}
 // Function call to initialize app
-init()
+init();
