@@ -8,6 +8,7 @@ function renderLicenseBadge(license) {
   } else {
     return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(license)})`
 }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -15,23 +16,24 @@ function renderLicenseBadge(license) {
 
 function renderLicenseLink(license) {
   if (license === 'Apache') {
-    return `https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0`
+    return `https://img.shields.io/badge/License-Apache_2.0-blue`
   }
   if (license === 'GNU') {
-    return `https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0`
+    return `https://img.shields.io/badge/License-GPLv3-blue`
   }
   if (license === 'ISC') {
-    return `https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC` 
+    return `https://img.shields.io/badge/License-ISC-blue` 
   }
   if (license === 'MIT') {
-    return `https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT` 
+    return `https://img.shields.io/badge/License-MIT-yellow` 
   }
   if (license === 'Mozilla') {
-    return `https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0` 
+    return `https://img.shields.io/badge/License-MPL_2.0-brightgreen` 
   }
   if (license === 'ODbl') {
-    return `https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/` 
+    return `https://img.shields.io/badge/License-ODbL-brightgreen` 
   }
+}
   
 
 // TODO: Create a function that returns the license section of README
@@ -81,7 +83,7 @@ function generateMarkdown(data) {
   ## Questions
   
   * [Github](https://github.com/${data.github})
-  * For any more questions, reach me at my [email](${data.email})
+  * [email](${data.email})
   
   ## Contributing
   
@@ -95,6 +97,3 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
-
-
-
