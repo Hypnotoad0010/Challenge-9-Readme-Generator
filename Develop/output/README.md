@@ -1,7 +1,7 @@
-# 
-  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/badge/License-MIT-yellow)
+# Readme Generator
+  [![ISC license](https://img.shields.io/badge/License-ISC-blue.svg)](https://img.shields.io/badge/License-ISC-blue)
   ## Description 
-  Readme Generator
+  A readme generator to create your readme file
   
   ## Table of Contents
   
@@ -13,11 +13,11 @@
   
   ## Installation
   
-  use npm i, then use npm start
+  First npm install and then run npm start to begin
   
   ## Usage 
   
-  In the terminal
+  open the app in the terminal
   
   ## Collaborators
   
@@ -25,11 +25,11 @@
   
   ## License
   
-  This project is licensed under the MIT
+  This project is licensed under the ISC
   
   ## Badges
   
-  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/badge/License-MIT-yellow)
+  [![ISC license](https://img.shields.io/badge/License-ISC-blue.svg)](https://img.shields.io/badge/License-ISC-blue)
   ## Questions
   
   * [Github](https://github.com/undefined)
@@ -42,4 +42,4 @@
   
   ## Tests
   
-  No
+  not needed
